@@ -89,12 +89,12 @@ class Game extends React.Component {
       radius: [5, 40],
       life: [1.5, 9],
       v: [2, 3],
-      tha: [-10, 10],
+      tha: [-40, 40],
       alpha: [0.6, 0],
       scale: [0.1, 0.4],
       position: "all",
       color: ["random", "#ff0000"],
-      random: 15,
+      random: 7,
     };
 
     const history = this.state.history;
