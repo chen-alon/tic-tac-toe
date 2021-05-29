@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #f8f6f6;
+  /* background-color: #f8f6f6; */
   opacity: 0.9;
   font-family: "Californian FB", Futura, sans-serif;
   padding-bottom: 20px;
@@ -8,7 +8,7 @@
 }
 
 .App-logo {
-  width: 60%;
+  width: 70%;
 }
 
 .board-row:after {
