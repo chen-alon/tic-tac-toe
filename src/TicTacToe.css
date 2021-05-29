@@ -7,10 +7,6 @@
   height: 100%;
 }
 
-.App-logo {
-  width: 70%;
-}
-
 .board-row:after {
   clear: both;
   content: "";
@@ -25,12 +21,12 @@
   background-color: #fe5f55;
   font-size: 24px;
   font-weight: bold;
-  height: 90px;
-  width: 90px;
+  height: calc(90px + 2vmin);
+  width: calc(90px + 2vmin);
 }
 
 .game {
-  font-size: calc(15px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: #000;
   display: flex;
   flex-direction: column;

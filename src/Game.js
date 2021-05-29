@@ -94,7 +94,6 @@ class Game extends React.Component {
       scale: [0.1, 0.4],
       position: "all",
       color: ["random", "#ff0000"],
-      cross: "dead",
       random: 15,
     };
 
