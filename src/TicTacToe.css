@@ -4,10 +4,11 @@
   opacity: 0.9;
   font-family: "Californian FB", Futura, sans-serif;
   padding-bottom: 20px;
+  height: 100%;
 }
 
 .App-logo {
-  width: 40%;
+  width: 60%;
 }
 
 .board-row:after {
