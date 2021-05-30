@@ -26,7 +26,7 @@
 }
 
 .game {
-  font-size: calc(30px + 2vmin);
+  font-size: calc(20px + 2vmin);
   color: #000;
   display: flex;
   flex-direction: column;
@@ -34,15 +34,9 @@
 }
 
 .reset-button {
-  font-family: "Californian FB", Futura, sans-serif;
-  font-size: calc(15px + 2vmin);
-  color: #fe5f55;
-  font-weight: bold;
-  border: 8px ridge #fff;
-  padding: 10px;
+  padding-top: 8px;
 }
 
 .game-info {
   padding-top: 25px;
-  background-color: transparent;
 }

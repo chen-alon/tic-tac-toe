@@ -2,6 +2,7 @@ import React from "react";
 import Board from "./Board";
 import ParticlesBg from "particles-bg";
 import "./TicTacToe.css";
+import Blink from "react-blink-text";
 
 function calculateWinner(squares) {
   const lines = [
@@ -94,7 +95,7 @@ class Game extends React.Component {
       scale: [0.1, 0.4],
       position: "all",
       color: ["random", "#ff0000"],
-      random: 7,
+      random: 4,
     };
 
     const history = this.state.history;
@@ -116,15 +117,21 @@ class Game extends React.Component {
             onClick={(i) => this.handleClick(i)}
             winner={winner && winner.winningSquares}
           />
-          <div className="game-info">{status}</div>
-          {areAllBoxesClicked(current.squares) || winner ? (
-            <button className="reset-button" onClick={() => this.handleReset()}>
-              New Game
-            </button>
-          ) : null}
           {winner ? (
-            <div>
+            <div className="game-info">
+              <Blink color="#87B38D" text={status} fontSize="20"></Blink>
               <ParticlesBg type="custom" config={config} bg={true} />
+            </div>
+          ) : (
+            <div className="game-info">{status}</div>
+          )}
+          {areAllBoxesClicked(current.squares) || winner ? (
+            <div
+              className="reset-button"
+              onClick={() => this.handleReset()}
+              disabled="true"
+            >
+              <Blink color="#000" text="New Game" fontSize="22"></Blink>
             </div>
           ) : null}
         </div>
