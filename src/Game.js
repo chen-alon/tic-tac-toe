@@ -122,8 +122,10 @@ class Game extends React.Component {
               <Blink color="#87B38D" text={status} fontSize="20"></Blink>
               <ParticlesBg type="custom" config={config} bg={true} />
             </div>
-          ) : (
+          ) : !areAllBoxesClicked(current.squares) ? (
             <div className="game-info">{status}</div>
+          ) : (
+            <div className="game-info">Game Over</div>
           )}
           {areAllBoxesClicked(current.squares) || winner ? (
             <div
