@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "./images/logo.png";
-import Game from "./Game.js";
+import Game from "./components/Game";
 import "./TicTacToe.css";
 
 class App extends Component {

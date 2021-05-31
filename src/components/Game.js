@@ -1,7 +1,6 @@
 import React from "react";
 import Board from "./Board";
 import ParticlesBg from "particles-bg";
-import "./TicTacToe.css";
 import Blink from "react-blink-text";
 
 function calculateWinner(squares) {
