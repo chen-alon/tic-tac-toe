@@ -79,7 +79,16 @@ class Game extends React.Component {
   }
 
   handleReset = () => {
-    window.location.reload();
+    // window.location.reload();
+    this.setState({
+      history: [
+        {
+          squares: Array(9).fill(null),
+        },
+      ],
+      stepNumber: 0,
+      xIsNext: true,
+    });
   };
 
   render() {
@@ -118,7 +127,7 @@ class Game extends React.Component {
           />
           {winner ? (
             <div className="game-info">
-              <Blink color="#87B38D" text={status} fontSize="20"></Blink>
+              <Blink color="#87B38D" text={status} fontSize="20px"></Blink>
               <ParticlesBg type="custom" config={config} bg={true} />
             </div>
           ) : !areAllBoxesClicked(current.squares) ? (
@@ -130,9 +139,9 @@ class Game extends React.Component {
             <div
               className="reset-button"
               onClick={() => this.handleReset()}
-              disabled="true"
+              disabled={true}
             >
-              <Blink color="#000" text="New Game" fontSize="22"></Blink>
+              <Blink color="#000" text="New Game" fontSize="22px"></Blink>
             </div>
           ) : null}
         </div>
