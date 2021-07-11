@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   opacity: 0.9;
-  font-family: "Californian FB", Futura, sans-serif;
+  font-family: "Californian FB", "Rockwell", "sans-serif";
   padding-bottom: 20px;
   height: 100%;
 }
@@ -13,7 +13,7 @@
 }
 
 .square {
-  font-family: "Californian FB", Futura, sans-serif;
+  font-family: "Californian FB", "Rockwell", "sans-serif";
   border: 1px solid #000;
   float: left;
   color: #fff;
