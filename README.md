@@ -8,12 +8,12 @@ A simple tic tac toe game built initially from the React website tutorial bootst
 ## Install and Run
 Clone the repository, then, in the directory, run: 
 ```bash
-npm install
+$ npm install
 ```
 
 Then, to deploy to local host:
 ```bash
-npm start
+$ npm start
 ```
 
 ## Demo
